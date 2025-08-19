@@ -74,31 +74,4 @@ function calculator(a, b, operation) {
 }
 
 // Exemplos de execução:
-console.log(calculator(10, 5, "+"));
-console.log(calculator(10, 5, "-"));
-console.log(calculator(10, 5, "*"));
-console.log(calculator(10, 5, "/"));
-
-// ----------------------------------------------------------
-// 5. Conversor de temperatura (Celsius ↔ Fahrenheit)
-// ----------------------------------------------------------
-
-function convertTemperature(temp) {
-  if (temp.type === "C") {
-    return {
-      type: "F",
-      value: temp.value * 1.8 + 32
-    };
-  } else if (temp.type === "F") {
-    return {
-      type: "C",
-      value: (temp.value - 32) / 1.8
-    };
-  } else {
-    return { error: "Invalid type! Use 'C' or 'F'." };
-  }
-}
-
-// Exemplos de execução:
-console.log(convertTemperature({ type: "C", value: 25 })); // Celsius → Fahrenheit
-console.log(convertTemperature({ type: "F", value: 77 })); // Fahrenheit → Celsius
+console.log(calculator
