@@ -7,31 +7,31 @@
 // 1. Peça um número ao usuário e mostre a tabuada de 1 a 10
 // ----------------------------------------------------------
 
-function tabuada(numero) {
-  console.log(`Tabuada do ${numero}:`);
+function multiplicationTable(number) {
+  console.log(`Multiplication Table of ${number}:`);
   for (let i = 1; i <= 10; i++) {
-    console.log(`${numero} x ${i} = ${numero * i}`);
+    console.log(`${number} x ${i} = ${number * i}`);
   }
 }
 
 // Exemplo de execução:
-tabuada(7);
+multiplicationTable(7);
 
 // ----------------------------------------------------------
 // 2. Função que recebe objeto com nome e idade e verifica se é maior de idade
 // ----------------------------------------------------------
 
-function verificarIdade(pessoa) {
-  if (pessoa.idade >= 18) {
-    return `${pessoa.nome} é maior de idade.`;
+function checkAge(person) {
+  if (person.age >= 18) {
+    return `${person.name} is an adult.`;
   } else {
-    return `${pessoa.nome} é menor de idade.`;
+    return `${person.name} is a minor.`;
   }
 }
 
 // Exemplo:
-console.log(verificarIdade({ nome: "João", idade: 17 }));
-console.log(verificarIdade({ nome: "Maria", idade: 22 }));
+console.log(checkAge({ name: "John", age: 17 }));
+console.log(checkAge({ name: "Mary", age: 22 }));
 
 // ----------------------------------------------------------
 // 3. Imprimir de 1 a 100, substituindo múltiplos por Fizz / Buzz / FizzBuzz
@@ -58,8 +58,8 @@ fizzBuzz();
 // 4. Função calculadora com switch
 // ----------------------------------------------------------
 
-function calculadora(a, b, operacao) {
-  switch (operacao) {
+function calculator(a, b, operation) {
+  switch (operation) {
     case "+":
       return a + b;
     case "-":
@@ -67,38 +67,38 @@ function calculadora(a, b, operacao) {
     case "*":
       return a * b;
     case "/":
-      return b !== 0 ? a / b : "Erro: divisão por zero!";
+      return b !== 0 ? a / b : "Error: division by zero!";
     default:
-      return "Operação inválida!";
+      return "Invalid operation!";
   }
 }
 
 // Exemplo:
-console.log(calculadora(10, 5, "+"));
-console.log(calculadora(10, 5, "-"));
-console.log(calculadora(10, 5, "*"));
-console.log(calculadora(10, 5, "/"));
+console.log(calculator(10, 5, "+"));
+console.log(calculator(10, 5, "-"));
+console.log(calculator(10, 5, "*"));
+console.log(calculator(10, 5, "/"));
 
 // ----------------------------------------------------------
 // 5. Conversor de temperatura (Celsius ↔ Fahrenheit)
 // ----------------------------------------------------------
 
-function converterTemperatura(temp) {
-  if (temp.tipo === "C") {
+function convertTemperature(temp) {
+  if (temp.type === "C") {
     return {
-      tipo: "F",
-      valor: temp.valor * 1.8 + 32
+      type: "F",
+      value: temp.value * 1.8 + 32
     };
-  } else if (temp.tipo === "F") {
+  } else if (temp.type === "F") {
     return {
-      tipo: "C",
-      valor: (temp.valor - 32) / 1.8
+      type: "C",
+      value: (temp.value - 32) / 1.8
     };
   } else {
-    return { erro: "Tipo inválido! Use 'C' ou 'F'." };
+    return { error: "Invalid type! Use 'C' or 'F'." };
   }
 }
 
 // Exemplo:
-console.log(converterTemperatura({ tipo: "C", valor: 25 })); // Celsius → Fahrenheit
-console.log(converterTemperatura({ tipo: "F", valor: 77 })); // Fahrenheit → Celsius
+console.log(convertTemperature({ type: "C", value: 25 })); // Celsius → Fahrenheit
+console.log(convertTemperature({ type: "F", value: 77 })); // Fahrenheit → Celsius
