@@ -4,7 +4,7 @@
 // Aluna: Luana Neres Reis
 
 // ----------------------------------------------------------
-// 1. Peça um número ao usuário e mostre a tabuada de 1 a 10
+// 1. Solicita um número ao usuário e mostra a tabuada de 1 a 10
 // ----------------------------------------------------------
 
 function multiplicationTable(number) {
@@ -18,7 +18,7 @@ function multiplicationTable(number) {
 multiplicationTable(7);
 
 // ----------------------------------------------------------
-// 2. Função que recebe objeto com nome e idade e verifica se é maior de idade
+// 2. Função que recebe um objeto com nome e idade e verifica se é maior de idade
 // ----------------------------------------------------------
 
 function checkAge(person) {
@@ -29,12 +29,12 @@ function checkAge(person) {
   }
 }
 
-// Exemplo:
+// Exemplos de execução:
 console.log(checkAge({ name: "John", age: 17 }));
 console.log(checkAge({ name: "Mary", age: 22 }));
 
 // ----------------------------------------------------------
-// 3. Imprimir de 1 a 100, substituindo múltiplos por Fizz / Buzz / FizzBuzz
+// 3. Imprime números de 1 a 100, substituindo múltiplos por Fizz / Buzz / FizzBuzz
 // ----------------------------------------------------------
 
 function fizzBuzz() {
@@ -51,11 +51,11 @@ function fizzBuzz() {
   }
 }
 
-// Exemplo:
+// Exemplo de execução:
 fizzBuzz();
 
 // ----------------------------------------------------------
-// 4. Função calculadora com switch
+// 4. Função calculadora utilizando switch
 // ----------------------------------------------------------
 
 function calculator(a, b, operation) {
@@ -73,7 +73,7 @@ function calculator(a, b, operation) {
   }
 }
 
-// Exemplo:
+// Exemplos de execução:
 console.log(calculator(10, 5, "+"));
 console.log(calculator(10, 5, "-"));
 console.log(calculator(10, 5, "*"));
@@ -99,6 +99,6 @@ function convertTemperature(temp) {
   }
 }
 
-// Exemplo:
+// Exemplos de execução:
 console.log(convertTemperature({ type: "C", value: 25 })); // Celsius → Fahrenheit
 console.log(convertTemperature({ type: "F", value: 77 })); // Fahrenheit → Celsius
