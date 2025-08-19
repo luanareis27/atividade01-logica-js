@@ -103,3 +103,4 @@ function convertTemperature(temp) {
 console.log(convertTemperature({ type: "C", value: 25 })); // Celsius → Fahrenheit
 console.log(convertTemperature({ type: "F", value: 77 })); // Fahrenheit → Celsius
 
+
