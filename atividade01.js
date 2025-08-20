@@ -167,8 +167,6 @@ fizzBuzz();
 // 98
 // Fizz
 // Buzz
-// Fizz ✅ (99)
-// Buzz ✅ (100)
 
 // ----------------------------------------------------------
 // 4. Função calculadora utilizando switch
@@ -229,8 +227,6 @@ console.log(convertTemperature({ type: "C", value: 25 }));
 
 console.log(convertTemperature({ type: "F", value: 77 }));
 // Resposta: { type: "C", value: 25 }
-
-
 
 
 
